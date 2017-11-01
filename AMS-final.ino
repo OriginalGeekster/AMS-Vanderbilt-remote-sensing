@@ -41,14 +41,14 @@ void loop()
   /*
   TEMPERATURE PRINT TO LCD
   */ 
-  lcd.print(sensors.getTempFByIndex(0));      //print temp value from temp sensor
+  lcd.print(sensors.getTempFByIndex(0) + 1);      //print temp value from temp sensor
   lcd.setCursor(6,0);
   lcd.print("F"); //units
   /*
   pH PRINT TO LCD
   */
   lcd.setCursor(0,1);
-  lcd.print(pHval);                         //print pH val given by getPH function (see below)
+  lcd.print(pHval + 1);                         //print pH val given by getPH function (see below)
   lcd.setCursor(6,1);
   lcd.print("pH");                          //units to do away with confusion
 }
